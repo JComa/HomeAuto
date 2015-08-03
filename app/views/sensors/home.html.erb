@@ -1,0 +1,24 @@
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1m.svg">
+    <h1>Sensors</h1>
+  </div>
+</div>
+
+
+<div class="sensors">
+  <div class="container">
+  
+  <% @sensors.each do |s| %> 
+  <div class="sensor"> 
+	  <p class="content"><%= s.id %></p> 
+	  <p class="content"><%= s.name %></p> 
+	  <p class="content"><%= s.tipus %></p> 
+	  <p class="content"><%= s.model %></p> 
+	  <p class="time"><%= s.created_at %></p> 
+	</div> 
+  <% end %>
+  
+  <%= link_to 'New Sensor', "sensors/new" %>
+  </div>
+</div>

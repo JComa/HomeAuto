@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1m.svg">
+    <h1>Sensors</h1>
+  </div>
+</div>
+
+<div class="create">
+  <div class="container">
+    
+<%= form_for(@sensor) do |f| %>  
+  <div class="field"> 
+    <%= f.label :name %><%= f.text_area :name %><br> 
+    <%= f.label :tipus %><%= f.text_area :tipus %><br> 
+    <%= f.label :model %><%= f.text_area :model %>
+  </div> 
+  <div class="actions"> 
+    <%= f.submit "Create" %> 
+  </div> 
+<% end %>
+    
+  </div>
+</div>
