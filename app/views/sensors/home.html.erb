@@ -17,6 +17,7 @@
 	  <p class="content"><%= s.model %></p> 
 	  <p class="time"><%= s.created_at %></p> 
 	</div> 
+	<%= link_to "View Readings", sensor_path(s) %>
   <% end %>
   
   <%= link_to 'New Sensor', "sensors/new" %>

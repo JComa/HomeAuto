@@ -10,9 +10,9 @@
     
 <%= form_for(@sensor) do |f| %>  
   <div class="field"> 
-    <%= f.label :name %><%= f.text_area :name %><br> 
-    <%= f.label :tipus %><%= f.text_area :tipus %><br> 
-    <%= f.label :model %><%= f.text_area :model %>
+    <%= f.label :name %><%= f.text_field :name %><br> 
+    <%= f.label :tipus %><%= f.text_field :tipus %><br> 
+    <%= f.label :model %><%= f.text_field :model %>
   </div> 
   <div class="actions"> 
     <%= f.submit "Create" %> 

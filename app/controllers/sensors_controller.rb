@@ -1,4 +1,5 @@
 class SensorsController < ApplicationController
+	
 	def home
 		@sensors = Sensor.all
 	end
@@ -15,6 +16,12 @@ class SensorsController < ApplicationController
 	    render 'new'
 	  end
 	end
+	
+	def show
+		@sensor = Sensor.find(params[:id])
+		@readings = @sensor.readings
+	end
+	
 	
 	private 
 	def message_params
