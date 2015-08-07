@@ -1,0 +1,18 @@
+
+<div class="create">
+  <div class="container">
+		<div class="form">
+
+		<h1>Sign up</h1>
+
+    <%= form_for(@user) do |f| %>
+      <%= f.text_field :device_name, :placeholder => "Device name" %>
+      <%= f.password_field :password, :placeholder => "Password" %>
+  	  <div class="actions"> 
+		<%= f.submit "Create an account"%>
+	  </div>
+    <% end %>
+  
+	</div>
+  </div>
+</div>

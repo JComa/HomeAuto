@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150804112643) do
+ActiveRecord::Schema.define(version: 20150807112245) do
 
   create_table "readings", force: true do |t|
     t.float    "valor"
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(version: 20150804112643) do
     t.string   "name"
     t.string   "tipus"
     t.string   "model"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "device_name"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
